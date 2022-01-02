@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head class="header-site">
+        <meta charset="UTF-8">
+
+        {% if role == 'librarian' %}
+            {% include "webpages/librarian_page.html" %}
+        {% elif role == 'admin' %}
+            {% include "webpages/admin_page.html" %}
+        {% elif role == 'user' %}
+            {% include "webpages/user_page.html" %}
+        {% endif %}
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'files/bootstrap/css/bootstrap.css' %}"  type="text/css" >
+        <link rel="stylesheet" href="{% static 'files/style2.css' %}"  type="text/css" >
+        <link rel="stylesheet" href="{% static 'files/style3.css' %}"  type="text/css" >
+        <link rel="stylesheet" href="{% static 'files/style5.css' %}"  type="text/css" >
+
+    </head>
+    <body>
+        <div class="col-md-10">
+
+        </div>
+    </body>
+    <footer>
+       <!-- {% include "webpages/footer.html" %} -->
+    </footer>
+</html>

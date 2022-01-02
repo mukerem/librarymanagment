@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'files/bootstrap/css/bootstrap.css' %}"  type="text/css" >
+        <link rel="stylesheet" href="{% static 'files/style2.css' %}"  type="text/css" >
+        <link rel="stylesheet" href="{% static 'files/style3.css' %}"  type="text/css" >
+        <link rel="stylesheet" href="{% static 'files/style4.css' %}"  type="text/css" >
+
+        <div class="jumbotron" style="background-color: #2cb8dc" id="front-page">
+                <div class="row" >
+                    <div class="col-sm-4">
+                        <!--
+                        <img src="http://localhost:8000/media/cd.png" height="150" width="400">
+                        -->
+                        <img src="{% static 'Images/cd.png' %}" height="150" width="300">
+                    </div>
+                    <div class="col-sm-5">
+                        <h3 style="color: white">Well come to Hijra Library.</h3><br/>
+                    </div>
+                    <div class="col-sm-3" >
+
+                    <a class="butt" href="/librarianLogin/">librarian login</a><br><br>
+                    <a class="butt" href="/adminLogin/">admin login</a><br><br>
+                    <a class="butt" href="/userLogin/">user login</a><br><br>
+                    </div>
+                </div>
+        </div>
+    </head>
+    <br><br><br>
+
+</html>
